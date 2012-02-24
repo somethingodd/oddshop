@@ -1,0 +1,56 @@
+name: OddGive
+main: info.somethingodd.OddGive.OddGive
+version: ${pom.version}
+website: http://bukkit.somethingodd.info
+author: petteyg359
+depend: [OddItem]
+description: >
+             Item giving stuff.
+commands:
+  i:
+    permission: oddgive.i
+    usage: |
+           /<command> <item [quantity] [item [quantity]]...>
+           Gives you item(s)
+  give:
+    aliases: g
+    permission: oddgive.give
+    usage: |
+           /<command> <player [player]...> <item [quantity] [item [quantity]]...>
+           Give player(s) item(s)
+  i0:
+    aliases: ['0',take]
+    permission: oddgive.i0
+    usage: |
+           /<command> [player]... [item [quantity]]...
+           Clears inventory [of player(s)] [of item(s)]
+  oddgive:
+    aliases: og
+    permission: oddgive.oddgive
+    usage: |
+           /<command> shows GUI (not yet implemented)
+permissions:
+  oddgive:
+    children:
+      oddgive.give: true
+      oddgive.give.bypass: false
+      oddgive.i: true
+      oddgive.i0: true
+      oddgive.i0.other: false
+      oddgive.list: true
+      oddgive.oddgive: true
+    default: true
+  oddgive.give:
+    default: op
+  oddgive.give.bypass:
+    default: op
+  oddgive.i:
+    default: op
+  oddgive.i0:
+    default: true
+  oddgive.i0.other:
+    default: op
+  oddgive.list:
+    default: true
+  oddgive.oddgive:
+    default: op
