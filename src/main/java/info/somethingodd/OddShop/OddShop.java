@@ -15,18 +15,21 @@ package info.somethingodd.OddShop;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.logging.Logger;
+
 /**
  * @author Gordon Pettey (petteyg359@gmail.com)
  */
 public class OddShop extends JavaPlugin {
+    protected Logger log;
 
     @Override
     public void onDisable() {
-
+        log = null;
     }
 
     @Override
     public void onEnable() {
-
+        log = getLogger();
     }
 }
