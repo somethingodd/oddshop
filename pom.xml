@@ -4,13 +4,13 @@
     <inceptionYear>2012</inceptionYear>
     <groupId>info.somethingodd</groupId>
     <artifactId>oddshop</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>oddshop</name>
     <url>http://somethingodd.info/oddshop</url>
     <parent>
         <groupId>info.somethingodd</groupId>
-        <artifactId>somethingodd-parent</artifactId>
-        <version>1.0.0</version>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <build>
         <resources>
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>info.somethingodd</groupId>
             <artifactId>odditem</artifactId>
-            <version>[0.9,0.10)</version>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <distributionManagement>
